@@ -20,6 +20,11 @@ export default new Router({
                     meta: { title: '系统首页' }
                 },
                 {
+                    path: '/key-action',
+                    component: resolve => require(['../components/page/key-action/key-action.vue'], resolve),
+                    meta: { title: '目标转化配置' }
+                },
+                {
                     path: '/icon',
                     component: resolve => require(['../components/page/Icon.vue'], resolve),
                     meta: { title: '自定义图标' }
